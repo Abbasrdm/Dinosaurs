@@ -27,15 +27,15 @@ public:
     }
 
     string roar() const override {
-        return name + " ROAR!";
+        return name + " ROARS!";
     }
 };
 
 //Test
 void testTyrannosaurus() {
     Dinosaur* dino = new Tyrannosaurus();
-    string expectedAttack = "stomps with its legs";
-    string expectedRoar = "ROAR!";
+    string expectedAttack = "Tyrannosaurus stomps with its legs";
+    string expectedRoar = "Tyrannosaurus ROARS!";
     assert(dino->attack() == expectedAttack);
     assert(dino->roar() == expectedRoar);
     delete dino;
